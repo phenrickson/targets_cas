@@ -21,7 +21,7 @@ tar_source()
 list(
   tar_target(
     name = data,
-    command = tibble(x = rnorm(1000), y = rnorm(1000))
+    command = tibble(x = rnorm(10000), y = rnorm(10000))
     # format = "qs" # Efficient storage for general data objects.
   ),
   tar_target(
